@@ -1,7 +1,7 @@
 /*
 
   Course Pack 1 - Variables
-  Exercise 2. Write a program that reads a positive integer and prints twice the same number.
+  Exercise 2. Write a program that reads a positive integer and prints their twice.
 
 */
 
