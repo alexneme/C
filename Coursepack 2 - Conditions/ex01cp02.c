@@ -9,28 +9,35 @@
 
 int main()
 {
-  int n1, n2, n3;
+  int num1, num2, num3;
 
   printf("Enter 3 numbers to order:\n");
-  scanf("%d %d %d", &n1, &n2, &n3);
+  scanf("%d %d %d", &num1, &num2, &num3);
 
-  if (n1 <= n2 && n2 <= n3){
-      printf("\nAscending order:\n%d\n%d\n%d\n", n1, n2, n3);
-    }
-  else if (n1 <= n3 && n3 <= n2){
-      printf("\nAscending order:\n%d\n%d\n%d\n", n1, n3, n2);
-    }
-  else if (n2 <= n1 && n1 <= n3){
-      printf("\nAscending order:\n%d\n%d\n%d\n", n2, n1, n3);
-    }
-  else if (n2 <= n3 && n3 <= n1){
-      printf("\nAscending order:\n%d\n%d\n%d\n", n2, n3, n1);
-    }
-  else if (n3 <= n1 && n1 <= n2){
-      printf("\nAscending order:\n%d\n%d\n%d\n", n3, n1, n2);
-    }
-  else{
-      printf("\nAscending order:\n%d\n%d\n%d\n", n3, n2, n1);
-    }
+  if (num1 <= num2 && num2 <= num3)
+  {
+    printf("\nAscending order:\n%d\n%d\n%d\n", num1, num2, num3);
+  }
+  else if (num1 <= num3 && num3 <= num2)
+  {
+    printf("\nAscending order:\n%d\n%d\n%d\n", num1, num3, num2);
+  }
+  else if (num2 <= num1 && num1 <= num3)
+  {
+    printf("\nAscending order:\n%d\n%d\n%d\n", num2, num1, num3);
+  }
+  else if (num2 <= num3 && num3 <= num1)
+  {
+    printf("\nAscending order:\n%d\n%d\n%d\n", num2, num3, num1);
+  }
+  else if (num3 <= num1 && num1 <= num2)
+  {
+    printf("\nAscending order:\n%d\n%d\n%d\n", num3, num1, num2);
+  }
+  else
+  {
+    printf("\nAscending order:\n%d\n%d\n%d\n", num3, num2, num1);
+  }
+  printf("\n");
   return 0;
 }

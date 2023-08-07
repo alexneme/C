@@ -9,19 +9,20 @@
 
 int main()
 {
-    float g1, t1, g2, t2, g3, t3, avar;
-    printf("Enter your grade: ");
-    scanf("%f", &g1);
-    printf("Enter their weight: ");
-    scanf("%f", &t1);
-    printf("Enter your grade: ");
-    scanf("%f", &g2);
-    printf("Enter their weight: ");
-    scanf("%f", &t2);
-    printf("Enter your grade: ");
-    scanf("%f", &g3);
-    printf("Enter their weight: ");
-    scanf("%f", &t3);
-    printf("\nWeighted average = %.2f", avar=((g1*t1) + (g2*t2) + (g3*t3)) / (t1+t2+t3));
+  float grade1, wgrade1, grade2, wgrade2, grade3, wgrade3, average;
+  printf("Enter your first grade: ");
+  scanf("%f", &grade1);
+  printf("Enter their weight: ");
+  scanf("%f", &wgrade1);
+  printf("Enter your seccond grade: ");
+  scanf("%f", &grade2);
+  printf("Enter their weight: ");
+  scanf("%f", &wgrade2);
+  printf("Enter your third grade: ");
+  scanf("%f", &grade3);
+  printf("Enter their weight: ");
+  scanf("%f", &wgrade3);
+  printf("\nWeighted average = %.2f", average = ((grade1 * wgrade1) + (grade2 * wgrade2) + (grade3 * wgrade3)) / (wgrade1 + wgrade2 + wgrade3));
+  printf("\n");
   return 0;
 }

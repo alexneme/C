@@ -9,9 +9,10 @@
 
 int main()
 {
-    int n;
-    printf("Enter a number: ");
-    scanf("%d", &n);
-    printf("The double = %d", n+=n);
+  int num;
+  printf("Enter a positive integer number: ");
+  scanf("%d", &num);
+  printf("Their double: %d", num += num);
+  printf("\n");
   return 0;
 }

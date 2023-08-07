@@ -1,11 +1,9 @@
 /*
 
   Course Pack 2 - Conditions
-  Exercise 4. Write a program that determines the degree of obesity of a person, being
-  the person's weight and height. The degree of obesity is determined by the mass index body (mass = weight / height2)
-  through the table below:
-  
-  BODY MASS             OBESITY DEGREE
+  Exercise 4. Write a program that determines the degree of obesity of a person, being the person's weight and height. The degree of obesity is determined by the body mass index (bmi = weight / height * height) through the table below:
+
+  BODY MASS INDEX       OBESITY DEGREE
   < 26                  Normal
   >= 26 e < 30          Obese
   >= 30                 Morbidly Obese
@@ -16,22 +14,26 @@
 
 int main()
 {
-    float kg, m, bmi;
+    float weight, meters, bmi;
 
     printf("Enter your weight in kilograms: ");
-    scanf("%f", &kg);
+    scanf("%f", &weight);
     printf("Enter your height in meters: ");
-    scanf("%f", &m);
+    scanf("%f", &meters);
 
-    bmi = kg/(m*m);
-    if(bmi < 26){
-        printf("BMI: %.1f Normal Weight", bmi);
+    bmi = weight / (meters * meters);
+    if (bmi < 26)
+    {
+        printf("Body Mass: %.1f\nNormal Weight", bmi);
     }
-    else if (bmi<30){
-        printf("BMI: %.1f Obese", bmi);
+    else if (bmi < 30)
+    {
+        printf("Body Mass Index: %.1f\nObese", bmi);
     }
-    else{
-        printf("BMI: %.1f Morbidly Obese", bmi);
+    else
+    {
+        printf("Body Mass Index: %.1f\nMorbidly Obese", bmi);
     }
+    printf("\n");
     return 0;
 }

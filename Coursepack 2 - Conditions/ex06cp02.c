@@ -1,14 +1,13 @@
 /*
 
   Course Pack 2 - Conditions
-  Exercise 6. Write a program that, given a student's three grades, determines and displays his average
-  and its concept, knowing that:
+  Exercise 6. Write a program that, given a student's three grades, determines and displays his average and its grading rate, knowing that:
 
   - The final average is calculated by the arithmetic mean of the 3 grades.
 
   - The grading is determined based on the following table:
 
-  FINAL AVERAGE         GRADING
+  FINAL AVERAGE         GRADING RATE
   >= 8                  A
   >= 5 and < 8          B
   < 5                   C
@@ -19,26 +18,30 @@
 
 int main()
 {
-	float g1, g2, g3, gA;
-	
+	float grade1, grade2, grade3, gradeAverage;
+
 	printf("Enter first grade: ");
-	scanf("%f", &g1);
+	scanf("%f", &grade1);
 	printf("Enter second grade: ");
-	scanf("%f", &g2);
+	scanf("%f", &grade2);
 	printf("Enter third grade: ");
-	scanf("%f", &g3);
-	
-	gA = (g1+g2+g3)/3;
-	printf("Your average: %.2f\n", gA);
-	
-	if(gA>=8){
-		printf("Grading A");
+	scanf("%f", &grade3);
+
+	gradeAverage = (grade1 + grade2 + grade3) / 3;
+	printf("Your average: %.2f\n", gradeAverage);
+
+	if (gradeAverage >= 8)
+	{
+		printf("Grading: A");
 	}
-	else if(gA>=5){
-		printf("Grading B");
+	else if (gradeAverage >= 5)
+	{
+		printf("Grading: B");
 	}
-	else{
-		printf("Grading C");
+	else
+	{
+		printf("Grading: C");
 	}
-    return 0;
+	printf("\n");
+	return 0;
 }
