@@ -38,6 +38,7 @@ int main()
   {
     printf("\nAscending order:\n%d\n%d\n%d\n", num3, num2, num1);
   }
+
   printf("\n");
   return 0;
 }

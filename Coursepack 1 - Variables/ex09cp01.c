@@ -11,13 +11,16 @@
 int main()
 {
   float ta, ca, ea, fa;
+
   printf("Enter test average grade: ");
   scanf("%f", &ta);
   printf("Enter coursework average grade: ");
   scanf("%f", &ca);
   printf("Enter exercises average grade: ");
   scanf("%f", &ea);
+
   printf("Final average = %.2f", fa = (ta * 0.7) + (ca * 0.2) + (ea * 0.1) / 3);
+
   printf("\n");
   return 0;
 }

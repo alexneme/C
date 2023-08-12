@@ -14,26 +14,27 @@
 
 int main()
 {
-    float weight, meters, bmi;
+  float weight, meters, bmi;
 
-    printf("Enter your weight in kilograms: ");
-    scanf("%f", &weight);
-    printf("Enter your height in meters: ");
-    scanf("%f", &meters);
+  printf("Enter your weight in kilograms: ");
+  scanf("%f", &weight);
+  printf("Enter your height in meters: ");
+  scanf("%f", &meters);
 
-    bmi = weight / (meters * meters);
-    if (bmi < 26)
-    {
-        printf("Body Mass: %.1f\nNormal Weight", bmi);
-    }
-    else if (bmi < 30)
-    {
-        printf("Body Mass Index: %.1f\nObese", bmi);
-    }
-    else
-    {
-        printf("Body Mass Index: %.1f\nMorbidly Obese", bmi);
-    }
-    printf("\n");
-    return 0;
+  bmi = weight / (meters * meters);
+  if (bmi < 26)
+  {
+    printf("Body Mass: %.1f\nNormal Weight", bmi);
+  }
+  else if (bmi < 30)
+  {
+    printf("Body Mass Index: %.1f\nObese", bmi);
+  }
+  else
+  {
+    printf("Body Mass Index: %.1f\nMorbidly Obese", bmi);
+  }
+
+  printf("\n");
+  return 0;
 }

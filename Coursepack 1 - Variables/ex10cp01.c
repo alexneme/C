@@ -9,20 +9,23 @@
 
 int main()
 {
-	float awater, asnack, acoke, total;
-	int water, snack, coke;
-	printf("Pricing table:\nWater\t\t$1.09\nSnack\t\t$2.49\nCoke\t\t$1.99\n");
-	printf("\nEnter the amount of products:\n");
-	printf("Water: ");
-	scanf("%d", &water);
-	printf("Snack: ");
-	scanf("%d", &snack);
-	printf("Coke: ");
-	scanf("%d", &coke);
-	printf("\nWater\nUnit Price:\t\t$1.09\nAmount:\t\t\t%d un\nSubtotal:\t\t$%.2f\n\n", water, awater = 1.09 * water);
-	printf("Snack\nUnit Price:\t\t$2.49\nAmount:\t\t\t%d un\nSubtotal:\t\t$%.2f\n\n", snack, asnack = 2.49 * snack);
-	printf("Coke\nUnit Price:\t\t$1.99\nAmount:\t\t\t%d un\nSubtotal:\t\t$%.2f\n\n", coke, acoke = 1.99 * coke);
-	printf("Purchase Total:\t\t$%.2f\n", total = awater + asnack + acoke);
-	printf("\n");
-	return 0;
+  float awater, asnack, acoke, total;
+  int water, snack, coke;
+
+  printf("Pricing table:\nWater\t\t$1.09\nSnack\t\t$2.49\nCoke\t\t$1.99\n");
+  printf("\nEnter the amount of products:\n");
+  printf("Water: ");
+  scanf("%d", &water);
+  printf("Snack: ");
+  scanf("%d", &snack);
+  printf("Coke: ");
+  scanf("%d", &coke);
+
+  printf("\nWater\nUnit Price:\t\t$1.09\nAmount:\t\t\t%d un\nSubtotal:\t\t$%.2f\n\n", water, awater = 1.09 * water);
+  printf("Snack\nUnit Price:\t\t$2.49\nAmount:\t\t\t%d un\nSubtotal:\t\t$%.2f\n\n", snack, asnack = 2.49 * snack);
+  printf("Coke\nUnit Price:\t\t$1.99\nAmount:\t\t\t%d un\nSubtotal:\t\t$%.2f\n\n", coke, acoke = 1.99 * coke);
+  printf("Purchase Total:\t\t$%.2f\n", total = awater + asnack + acoke);
+
+  printf("\n");
+  return 0;
 }

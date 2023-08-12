@@ -11,11 +11,14 @@
 int main()
 {
   float area, base, height;
+
   printf("Enter the base of a triangle: ");
   scanf("%f", &base);
   printf("Enter their height: ");
   scanf("%f", &height);
+
   printf("Area = %.2f", area = (base * height) / 2);
+  
   printf("\n");
   return 0;
 }

@@ -26,6 +26,7 @@ int main()
   {
     printf("\nError! Same number.\n");
   }
+
   printf("\n");
   return 0;
 }

@@ -10,6 +10,7 @@
 int main()
 {
   float grade1, wgrade1, grade2, wgrade2, grade3, wgrade3, average;
+
   printf("Enter your first grade: ");
   scanf("%f", &grade1);
   printf("Enter their weight: ");
@@ -22,7 +23,9 @@ int main()
   scanf("%f", &grade3);
   printf("Enter their weight: ");
   scanf("%f", &wgrade3);
+
   printf("\nWeighted average = %.2f", average = ((grade1 * wgrade1) + (grade2 * wgrade2) + (grade3 * wgrade3)) / (wgrade1 + wgrade2 + wgrade3));
+  
   printf("\n");
   return 0;
 }

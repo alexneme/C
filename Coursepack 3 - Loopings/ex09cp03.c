@@ -10,12 +10,18 @@
 
 int main()
 {
-	int n, sum = 0;
-	printf("Enter a integer number N: ");
-	scanf("%d", &n);
-	for(int i=0; i<=n; i++)
-	{
-		sum+=i;
-	}
-	printf("%d\n", sum);
+  int i, n, sum = 0;
+
+  printf("Enter a integer number N: ");
+  scanf("%d", &n);
+
+  for (i = 0; i <= n; i++)
+  {
+    sum += i;
+  }
+
+  printf("%d\n", sum);
+
+  printf("\n");
+  return 0;
 }

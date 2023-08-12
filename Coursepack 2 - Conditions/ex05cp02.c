@@ -14,23 +14,24 @@
 
 int main()
 {
-	float salary, newsalary;
+  float salary, newsalary;
 
-	printf("Enter your salary: $");
-	scanf("%f", &salary);
+  printf("Enter your salary: $");
+  scanf("%f", &salary);
 
-	if (salary <= 1000)
-	{
-		printf("New salary: $%.2f", newsalary = salary * 1.20);
-	}
-	else if (salary <= 5000)
-	{
-		printf("New salary: $%.2f", newsalary = salary * 1.10);
-	}
-	else
-	{
-		printf("New salary: $%.2f", salary);
-	}
-	printf("\n");
-	return 0;
+  if (salary <= 1000)
+  {
+    printf("New salary: $%.2f", newsalary = salary * 1.20);
+  }
+  else if (salary <= 5000)
+  {
+    printf("New salary: $%.2f", newsalary = salary * 1.10);
+  }
+  else
+  {
+    printf("New salary: $%.2f", salary);
+  }
+
+  printf("\n");
+  return 0;
 }

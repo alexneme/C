@@ -5,7 +5,7 @@
   first terms:
 
   S = 1 + (x^2/1) + (x^3/2) + (x^4/3) + (x^5/4) + ...
-  
+
 */
 
 #include <stdio.h>
@@ -13,19 +13,21 @@
 int main()
 {
   int i;
-  float x, serie, expo;
+  float x, serie = 1, expo;
 
   printf("X: ");
   scanf("%f", &x);
-	
-	serie = 1;
-	expo = x*x;
-	
-	for(i=1; i<15; i++)
-	{
-		serie = serie + expo/i;
-		expo = expo * x;
-	}
-	printf("S = %.2f\n", serie);
+
+  expo = x * x;
+
+  for (i = 1; i < 15; i++)
+  {
+    serie = serie + expo / i;
+    expo = expo * x;
+  }
+
+  printf("S = %.2f\n", serie);
+
+  printf("\n");
   return 0;
 }

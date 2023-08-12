@@ -11,10 +11,13 @@ int main()
 {
   int num1, num2;
   printf("Enter first integer number to multiply by 5: ");
+
   scanf("%d", &num1);
   printf("Enter second integer number to add 10: ");
   scanf("%d", &num2);
+
   printf("First number times 5 = %d\nSecond number plus 10 = %d", num1 = num1 * 5, num2 = num2 + 10);
+
   printf("\n");
   return 0;
 }

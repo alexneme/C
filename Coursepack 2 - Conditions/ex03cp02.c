@@ -30,6 +30,7 @@ int main()
   {
     printf("\nConsumer: %d\nTotal to pay: $11,20", consumerId);
   }
+
   printf("\n");
   return 0;
 }

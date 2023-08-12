@@ -29,40 +29,42 @@
 
 int main()
 {
-	char name[30], ap;
-	int numdaily;
-	float consump, dailyrate, subtotal, fee, total, dailyprice;
+  char name[30], ap;
+  int numdaily;
+  float consump, dailyrate, subtotal, fee, total, dailyprice;
 
-	printf("Enter your name: ");
-	scanf("%s", name);
-	printf("Enter the number of nights: ");
-	scanf("%d", &numdaily);
-	printf("Enter the type of apartment (Luxurious [A] Premium [B] Standard [C] Basic [D]: ");
-	scanf(" %c", &ap);
-	printf("Enter value of products consumption: $");
-	scanf("%f", &consump);
+  printf("Enter your name: ");
+  scanf("%s", name);
+  printf("Enter the number of nights: ");
+  scanf("%d", &numdaily);
+  printf("Enter the type of apartment (Luxurious [A] Premium [B] Standard [C] Basic [D]: ");
+  scanf(" %c", &ap);
+  printf("Enter value of products consumption: $");
+  scanf("%f", &consump);
 
-	switch (ap)
-	{
-	case 'a':
-		dailyrate = numdaily * 150;
-		break;
-	case 'b':
-		dailyrate = numdaily * 100;
-		break;
-	case 'c':
-		dailyrate = numdaily * 75;
-		break;
-	case 'd':
-		dailyrate = numdaily * 50;
-		break;
-	}
-	subtotal = dailyrate + consump;
-	fee = subtotal * 0.10;
-	total = subtotal + fee;
-	dailyprice = dailyrate / numdaily;
+  switch (ap)
+  {
+  case 'a':
+    dailyrate = numdaily * 150;
+    break;
+  case 'b':
+    dailyrate = numdaily * 100;
+    break;
+  case 'c':
+    dailyrate = numdaily * 75;
+    break;
+  case 'd':
+    dailyrate = numdaily * 50;
+    break;
+  }
 
-	printf("Name: %s\nType of apartment: %c\nNumber of daily used: %d\nDaily price: $%.2f\nTotal daily rates: $%.2f\nConsumption value: $%.2f\nSubtotal: $%.2f\nService fee: $%.2f\nTotal value: $%.2f", name, ap, numdaily, dailyprice, dailyrate, consump, subtotal, fee, total);
-	printf("\n");
-	return 0;
+  subtotal = dailyrate + consump;
+  fee = subtotal * 0.10;
+  total = subtotal + fee;
+  dailyprice = dailyrate / numdaily;
+
+  printf("Name: %s\nType of apartment: %c\nNumber of daily used: %d\nDaily price: $%.2f\nTotal daily rates: $%.2f\nConsumption value: $%.2f\nSubtotal: $%.2f\nService fee: $%.2f\nTotal value: $%.2f", name, ap, numdaily, dailyprice, dailyrate, consump, subtotal, fee, total);
+
+  printf("\n");
+  return 0;
 }

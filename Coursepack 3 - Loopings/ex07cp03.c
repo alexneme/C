@@ -9,8 +9,14 @@
 
 int main()
 {
-    for(int i=1; i<=50; i++)
-	{
-	    printf("%d\n", i);
-	}
+  int i;
+
+  for (i = 1; i <= 50; i++)
+  {
+    printf("%d ", i);
+    printf("\n");
+  }
+
+  printf("\n");
+  return 0;
 }

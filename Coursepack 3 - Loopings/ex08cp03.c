@@ -9,8 +9,13 @@
 
 int main()
 {
-	for(int i=10; i<=1000; i+=10)
-	{
-		printf("%d\n", i);
-	}
+  int i;
+
+  for (i = 10; i <= 1000; i += 10)
+  {
+    printf("%d\n", i);
+  }
+
+  printf("\n");
+  return 0;
 }
