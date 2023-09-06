@@ -11,7 +11,7 @@ int main()
 {
   int i, sum = 0;
 
-  for (i = 0; i < 501; i++)
+  for (i = 1; i <= 500; i++)
   {
     if (i % 2 != 0)
     {
